@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<!--[if lt IE 9]>
+  	<script src="assets/unsemantic/assets/javascripts/html5.js"></script>
+  	<![endif]-->
+  	<link rel="stylesheet" href="assets/unsemantic/assets/stylesheets/demo.css" />
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	<link rel="stylesheet" href="assets/unsemantic/assets/stylesheets/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<link rel="stylesheet" href="assets/unsemantic/assets/stylesheets/ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="assets/tic-tac-toe/stylesheets/tic-tac-toe.css" />
+
+	<title>Tic Tac Toe</title>
+</head>
+
+<body>
+	<main class="grid-container" role="main">
+		<div class="grid-60 push-20 grid-parent game-area">
+			<div id="a1" class="grid-33 square has-right-line has-bottom-line"></div>
+			<div id="a2" class="grid-33 square has-right-line has-bottom-line"></div>
+			<div id="a3" class="grid-33 square has-bottom-line"></div>
+
+			<div id="b1" class="grid-33 square has-right-line has-bottom-line"></div>
+			<div id="b2" class="grid-33 square has-right-line has-bottom-line"></div>
+			<div id="b3" class="grid-33 square has-bottom-line"></div>
+
+			<div id="c1" class="grid-33 square has-right-line"></div>
+			<div id="c2" class="grid-33 square has-right-line"></div>
+			<div id="c3" class="grid-33 square"></div>
+		</div>
+	</main>
+
+	<script src="assets/jquery/dist/jquery.min.js"></script>
+	<script src="assets/tic-tac-toe/javascripts/tic-tac-toe.js"></script>
+	<script>
+	TicTacToe.start();
+	</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.square {
+	min-height: 50px;
+	min-width: 50px;
+}
+
+.has-bottom-line {
+	border-bottom: 1px solid black;
+}
+
+.has-right-line {
+	border-right: 1px solid black;
+}
