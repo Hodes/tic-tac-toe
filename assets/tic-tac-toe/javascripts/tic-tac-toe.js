@@ -18,7 +18,7 @@ var TicTacToe = (function($) {
 		game.move(choice);
 
 		if (game.over) {
-			$('.result').text(game.winner === 0 ? 'Venceu!' : 'Perdeu!');
+			$('.result').text(game.winner != 0 ? 'Perdeu!' : 'Venceu!');
 		}
 	}
 
