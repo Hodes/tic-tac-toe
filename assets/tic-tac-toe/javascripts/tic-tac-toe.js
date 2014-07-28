@@ -18,6 +18,7 @@ var TicTacToe = (function($) {
 		game.move(choice);
 
 		if (game.over) {
+			console.log(game.winner);
 			$('.result').text(game.winner != 0 ? 'Perdeu!' : 'Venceu!');
 		}
 	}
