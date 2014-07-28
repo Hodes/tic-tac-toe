@@ -21,6 +21,9 @@
 </head>
 
 <body>
+	<header>
+		<h1>Jogo da Velha com IA</h1>
+	</header>
 	<main class="grid-container" role="main">
 		<div class="grid-60 push-20 grid-parent game-area">
 			<div id="a1" class="grid-33 square has-right-line has-bottom-line"></div>
@@ -35,10 +38,25 @@
 			<div id="c2" class="grid-33 square has-right-line"></div>
 			<div id="c3" class="grid-33 square"></div>
 		</div>
+		<h2 class="grid-60 push-20 result"></h2>
 	</main>
 
 	<script src="assets/jquery/dist/jquery.min.js"></script>
 	<script src="assets/lodash/dist/lodash.min.js"></script>
+	<script>
+		Array.prototype.diff = function(a) {
+		    return this.filter(function(i) {return a.indexOf(i) < 0;});
+		};
+
+		Array.max = function(array){
+		    return Math.max.apply(Math, array);
+		};
+
+		Array.min = function(array){
+		    return Math.min.apply(Math, array);
+		};
+	</script>
+	<script src="assets/tic-tac-toe/javascripts/game.js"></script>
 	<script src="assets/tic-tac-toe/javascripts/tic-tac-toe.js"></script>
 	<script>
 	TicTacToe.start();

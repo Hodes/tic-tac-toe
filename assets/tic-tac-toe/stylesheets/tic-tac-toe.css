@@ -1,6 +1,5 @@
 .square {
-	min-height: 50px;
-	min-width: 50px;
+	min-height: 100px;
 }
 
 .has-bottom-line {
@@ -9,4 +8,13 @@
 
 .has-right-line {
 	border-right: 1px solid black;
+}
+
+.game-area {
+	margin-top: 20px;
+	border: 5px solid black;
+}
+
+.result {
+	text-align: center;
 }
